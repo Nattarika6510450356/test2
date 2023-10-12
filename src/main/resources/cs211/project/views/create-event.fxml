@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateEventController">
+   <children>
+      <Label layoutX="389.0" layoutY="81.0" text="Create New Event" textFill="#ffc900">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="180.0" text="Event Name" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="eventNameTextField" layoutX="378.0" layoutY="179.0" prefHeight="31.0" prefWidth="275.0" promptText="Event Name" style="-fx-background-radius: 50;" />
+      <Label layoutX="163.0" layoutY="255.0" text="Event Picture" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="453.0" layoutY="251.0" mnemonicParsing="false" onAction="#uploadEventImageBtnClick" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffc900; -fx-background-radius: 50;" text="Upload File">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="163.0" layoutY="362.0" text="Detail" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="detailsTextField" alignment="TOP_LEFT" layoutX="378.0" layoutY="327.0" prefHeight="100.0" prefWidth="274.0" promptText="Detail" style="-fx-background-radius: 20;" />
+      <Label layoutX="161.0" layoutY="461.0" text="Maximum Seat" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="maxSeatTextField" layoutX="466.0" layoutY="462.0" prefHeight="31.0" prefWidth="86.0" promptText="Seat" style="-fx-background-radius: 50;" />
+      <Label layoutX="162.0" layoutY="535.0" text="Date Start" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDate" layoutX="418.0" layoutY="536.0" />
+      <Label layoutX="162.0" layoutY="605.0" text="Date Finish" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="finishDate" layoutX="419.0" layoutY="602.0" />
+      <Button layoutX="464.0" layoutY="681.0" mnemonicParsing="false" onAction="#createButtonClick" style="-fx-background-color: #ffc900;" text="Create">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackBtnClick" style="-fx-background-color: #ffc900;" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="uploadEventImageView" fitHeight="210.0" fitWidth="299.0" layoutX="685.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/events/samplePic.png" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

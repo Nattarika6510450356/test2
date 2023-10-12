@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.UserProfileController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane layoutX="-10.0" layoutY="-10.0" prefHeight="783.0" prefWidth="1044.0" style="-fx-background-color: #171717;">
+         <children>
+            <ImageView fx:id="profilePicImageView" fitHeight="202.0" fitWidth="215.0" layoutX="236.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../../../images/default.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="myEventTableview" layoutX="106.0" layoutY="347.0" prefHeight="346.0" prefWidth="863.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <Button layoutX="421.0" layoutY="712.0" mnemonicParsing="false" onAction="#onCreateEventBtnClick" prefHeight="45.0" prefWidth="237.0" style="-fx-background-color: #ffc900;" text="Create New Event">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="nameLabel" layoutX="486.0" layoutY="69.0" text="NameLabel" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="482.0" layoutY="117.0" text="\@usernameLabel" textFill="#ffc900">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="484.0" layoutY="160.0" mnemonicParsing="false" onAction="#onEditProfileBtnClick" prefHeight="46.0" prefWidth="156.0" style="-fx-background-color: #ffc900;" text="Edit User Info">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="484.0" layoutY="222.0" mnemonicParsing="false" onAction="#joinedEventBtnClick" prefHeight="48.0" prefWidth="156.0" style="-fx-background-color: #ffc900;" text="Joined Event">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="29.0" layoutY="25.0" mnemonicParsing="false" onAction="#eventsBtnClick" prefHeight="50.0" prefWidth="97.0" style="-fx-background-color: #ffc900;" text="Back">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="461.0" layoutY="292.0" text="My Event" textFill="#ffc900">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

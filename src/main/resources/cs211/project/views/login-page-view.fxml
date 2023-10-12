@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.LoginPageController">
+   <children>
+      <BorderPane prefHeight="764.0" prefWidth="1026.0" style="-fx-background-color: #171717;">
+         <left>
+            <AnchorPane prefHeight="545.0" prefWidth="433.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="777.0" fitWidth="455.0" layoutX="30.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/falcontech.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <AnchorPane layoutX="13.0" layoutY="425.0" prefHeight="417.0" prefWidth="472.0" style="-fx-background-color: #171717;">
+                     <children>
+                        <Label layoutX="61.0" layoutY="69.0" prefHeight="148.0" prefWidth="384.0" text="EventFlow" textFill="#f5f2f2">
+                           <font>
+                              <Font name="Silom" size="67.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="863.0" prefWidth="571.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="392.0" layoutY="21.0" mnemonicParsing="false" onAction="#onOrganizerBtnClick" prefHeight="48.0" prefWidth="134.0" style="-fx-background-color: #ffc900;" text="Creator">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextField fx:id="usernameTextField" layoutX="215.0" layoutY="302.0" prefHeight="54.0" prefWidth="286.0" promptText="Username" style="-fx-background-radius: 50;" styleClass="TextFieldStyle" stylesheets="@../../../styles/styles.css" />
+                  <Label layoutX="74.0" layoutY="313.0" stylesheets="@../../../styles/styles.css" text="Username" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="130.0" layoutY="605.0" mnemonicParsing="false" onAction="#onRegisterBtnClick" prefHeight="54.0" prefWidth="390.0" style="-fx-background-color: #ffc900;" text="Don't have account, Register here">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="290.0" layoutY="516.0" mnemonicParsing="false" onAction="#onLoginBtnClick" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: #ffc900;" text="Log In">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="72.0" layoutY="418.0" stylesheets="@../../../styles/styles.css" text="Password" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="errorLabel" layoutX="245.0" layoutY="474.0" text="errorLabel" textFill="RED">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="160.0" fitWidth="164.0" layoutX="269.0" layoutY="104.0">
+                     <image>
+                        <Image url="@../../../images/lock.png" />
+                     </image>
+                  </ImageView>
+
+
+                  <Button layoutX="274.0" layoutY="687.0" mnemonicParsing="false" onAction="#instructionBtn" style="-fx-background-color: #ffc900;" text="Instruction">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="passwordTextField" layoutX="215.0" layoutY="406.0" prefHeight="54.0" prefWidth="286.0" promptText="Password" style="-fx-background-radius: 50;" styleClass="TextFieldStyle" />
+
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

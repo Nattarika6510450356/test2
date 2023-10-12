@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EventScheduleController">
+   <children>
+      <BorderPane prefHeight="776.0" prefWidth="1025.0" style="-fx-background-color: #171717;">
+         <top>
+            <AnchorPane prefHeight="777.0" prefWidth="1025.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="scheduleTableView" layoutX="86.0" layoutY="141.0" prefHeight="576.0" prefWidth="859.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TableView>
+                  <Button layoutX="38.0" layoutY="22.0" mnemonicParsing="false" onAction="#backBtnClick" prefHeight="56.0" prefWidth="100.0" style="-fx-background-color: #ffc900;" text="Back">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

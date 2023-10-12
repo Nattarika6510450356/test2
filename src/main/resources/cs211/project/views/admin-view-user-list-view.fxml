@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.AdminViewUserListController">
+   <children>
+      <Button layoutX="623.0" layoutY="51.0" mnemonicParsing="false" onAction="#onEditPasswordButtonClick" style="-fx-background-color: #ffc900;" text="Edit Password">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TableView fx:id="usersTableView" layoutX="83.0" layoutY="129.0" prefHeight="588.0" prefWidth="865.0">
+        <columns>
+          <TableColumn prefWidth="67.0" text="No." />
+          <TableColumn prefWidth="261.0" text="Username" />
+            <TableColumn prefWidth="261.0" text="Name" />
+            <TableColumn prefWidth="261.0" text="Latest  Use" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Button layoutX="827.0" layoutY="50.0" mnemonicParsing="false" onAction="#onLogOutBtnClick" style="-fx-background-color: #ffc900;" text="Log Out">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

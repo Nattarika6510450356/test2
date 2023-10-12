@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateTeamController">
+   <children>
+      <Label layoutX="419.0" layoutY="92.0" text="Create Team" textFill="#ffc900">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="193.0" text="Team Name" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="281.0" text="Team Max Seat" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="360.0" text="Registration Open" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="444.0" text="Registration Close" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="445.0" layoutY="557.0" mnemonicParsing="false" onAction="#onCreateTeamBtnClick" style="-fx-background-color: #ffc900;" text="Create Team">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="teamNameTextField" layoutX="514.0" layoutY="192.0" prefHeight="31.0" prefWidth="275.0" promptText="Team Name" style="-fx-background-radius: 50;" />
+      <TextField fx:id="teamMaxSeatTextField" layoutX="514.0" layoutY="279.0" prefHeight="31.0" prefWidth="275.0" promptText="Seat" style="-fx-background-radius: 50;" />
+      <DatePicker fx:id="registOpen" layoutX="558.0" layoutY="362.0" />
+      <DatePicker fx:id="registClose" layoutX="558.0" layoutY="441.0" />
+      <Button layoutX="24.0" layoutY="20.0" mnemonicParsing="false" onAction="#onBackBtnClick" style="-fx-background-color: #ffc900;" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="errorLabel" layoutX="536.0" layoutY="228.0" text="errorLabel" textFill="RED" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

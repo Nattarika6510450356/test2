@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.JoinedEventController">
+   <ImageView fitHeight="912.0" fitWidth="1235.0" layoutX="-163.0" layoutY="-117.0">
+      <image>
+         <Image url="@../../../images/star.jpg" />
+      </image>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </ImageView>
+    <Button layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#onBackBtnClick" style="-fx-background-color: #ffc900;" text="Back">
+        <font>
+            <Font size="24.0" />
+        </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+    </Button>
+   <Label layoutX="165.0" layoutY="107.0" text="Joined Events" textFill="#ffc900">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Label>
+   <TableView fx:id="joinedEventTable" layoutX="53.0" layoutY="162.0" prefHeight="582.0" prefWidth="441.0">
+     <columns>
+       <TableColumn prefWidth="75.0" text="C1" />
+       <TableColumn prefWidth="75.0" text="C2" />
+     </columns>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </TableView>
+   <Label layoutX="620.0" layoutY="106.0" text="Joined Events Team" textFill="#ffc900">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Label>
+   <TableView fx:id="joinedTeamTable" layoutX="552.0" layoutY="162.0" prefHeight="582.0" prefWidth="441.0">
+      <columns>
+         <TableColumn prefWidth="75.0" text="C1" />
+         <TableColumn prefWidth="75.0" text="C2" />
+      </columns>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </TableView>
+</AnchorPane>

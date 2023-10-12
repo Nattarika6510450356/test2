@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EventController">
+   <children>
+      <BorderPane prefHeight="777.0" prefWidth="1025.0" style="-fx-background-color: #171717;">
+         <bottom>
+            <AnchorPane prefHeight="806.0" prefWidth="1025.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="scheduleButton" layoutX="716.0" layoutY="705.0" mnemonicParsing="false" onAction="#scheduleBtnClick" style="-fx-background-color: #ffc900;" text="Schedule">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="178.0" layoutY="567.0" text="Date :" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="eventImageView" fitHeight="400.0" fitWidth="627.0" layoutX="236.0" layoutY="109.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="236.0" AnchorPane.rightAnchor="262.4000000000001">
+                     <image>
+                        <Image url="@../../../images/events/samplePic.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="eventNameLabel" alignment="TOP_CENTER" layoutX="228.0" layoutY="44.0" prefHeight="82.0" prefWidth="615.0" text="EventNameLabel" textFill="#ffc900" wrapText="true">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="teamTableView" layoutX="601.0" layoutY="565.0" prefHeight="119.0" prefWidth="395.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="93.5999755859375" text="C2" />
+                    </columns>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TableView>
+                  <Label layoutX="741.0" layoutY="522.0" prefHeight="35.0" prefWidth="114.0" text="Team List" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="180.0" layoutY="611.0" text="Seat :" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="179.0" layoutY="653.0" text="Detail : " textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dateLabel" layoutX="248.0" layoutY="566.0" text="dateLabel" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="seatLabel" layoutX="248.0" layoutY="612.0" text="seatLabel" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="detailLabel" alignment="TOP_LEFT" layoutX="249.0" layoutY="654.0" prefHeight="89.0" prefWidth="331.0" text="detailLabel" textFill="#ffc900" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="16.0" layoutY="18.0" mnemonicParsing="false" onAction="#backBtnClick" prefHeight="45.0" prefWidth="95.0" style="-fx-background-color: #ffc900;" text="Back">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="seatFullLabel" layoutX="720.0" layoutY="718.0" text="SEAT FULL" textFill="#ffc900">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="joinIndividualButton" layoutX="712.0" layoutY="705.0" mnemonicParsing="false" onAction="#joinBtnClick" style="-fx-background-color: #ffc900;" text="Join Individual">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

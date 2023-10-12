@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.OrganizerController">
+   <children>
+      <Label layoutX="443.0" layoutY="30.0" text="Organizer" textAlignment="CENTER" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel1" layoutX="235.0" layoutY="329.0" text="นางสาวณัฐภัทร อิ่นคำ (ฟอร์จูน)" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nameLabel2" layoutX="596.0" layoutY="329.0" text="นายกฤษฎิ์พิรัชย์ ชัยวงศ์ (แอม)" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nameLabel3" layoutX="261.0" layoutY="634.0" text="นางสาวนลินี ศรีหา (ชมพู่)" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="nameLabel4" layoutX="594.0" layoutY="634.0" text="นางสาวณัฐริกา กัมพลานุวงศ์ (มุก)" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#onBackBtnClick" style="-fx-background-color: #ffc900;" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="nameLabel11" layoutX="295.0" layoutY="362.0" text="6510405512" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel111" layoutX="653.0" layoutY="362.0" text="6510405300" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel112" layoutX="302.0" layoutY="670.0" text="6510450526" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel113" layoutX="666.0" layoutY="670.0" text="6510450356" textFill="#ffc900">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="278.0" layoutY="421.0">
+         <image>
+            <Image url="@../../../images/IMG_6836.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="161.0" layoutX="633.0" layoutY="422.0">
+         <image>
+            <Image url="@../../../images/IMG_0477.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="149.0" layoutX="278.0" layoutY="114.0">
+         <image>
+            <Image url="@../../../images/IMG_0476.JPG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="633.0" layoutY="115.0">
+         <image>
+            <Image url="@../../../images/IMG_0475.jpg" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

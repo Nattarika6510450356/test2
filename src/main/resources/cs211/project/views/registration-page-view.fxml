@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.RegistrationPageController">
+   <children>
+      <BorderPane prefHeight="769.0" prefWidth="1029.0" style="-fx-background-color: #171717;">
+         <top>
+            <AnchorPane prefHeight="773.0" prefWidth="1029.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="458.0" layoutY="607.0" mnemonicParsing="false" onAction="#onRegisterBtnClick" prefHeight="55.0" prefWidth="128.0" style="-fx-background-color: #ffc900;" text="Register">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="errorLabel" layoutX="680.0" layoutY="516.0" text="errorLabel" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="uploadProflieImageView" fitHeight="200.0" fitWidth="208.0" layoutX="166.0" layoutY="252.0">
+                     <image>
+                        <Image url="@../../../images/default.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="475.0" layoutY="246.0" text="Username" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="475.0" layoutY="324.0" text="Name" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="475.0" layoutY="399.0" text="Create Password" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="479.0" layoutY="476.0" text="Confirm Password" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="438.0" layoutY="81.0" prefHeight="44.0" prefWidth="201.0" text="Registration" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" layoutX="664.0" layoutY="235.0" prefHeight="43.0" prefWidth="213.0" promptText="Username" style="-fx-background-radius: 50;" />
+                  <TextField fx:id="nameTextField" layoutX="667.0" layoutY="310.0" prefHeight="43.0" prefWidth="213.0" promptText="Name" style="-fx-background-radius: 50;" />
+                  <PasswordField fx:id="createPasswordTextField" layoutX="669.0" layoutY="387.0" prefHeight="43.0" prefWidth="213.0" promptText="Create Password" style="-fx-background-radius: 50;" />
+                  <PasswordField fx:id="comfirmPasswordTextField" layoutX="671.0" layoutY="464.0" prefHeight="43.0" prefWidth="213.0" promptText="Confirm Password" style="-fx-background-radius: 50;" />
+                  <Label layoutX="143.0" layoutY="479.0" text="*You can change your picture later*" textFill="#ffc900">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="22.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBackBtnClick" prefHeight="53.0" prefWidth="97.0" style="-fx-background-color: #ffc900;" text="Back">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

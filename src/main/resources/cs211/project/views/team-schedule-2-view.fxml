@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.TeamSchedule2Controller">
+    <children>
+        <BorderPane prefHeight="770.0" prefWidth="1026.0" style="-fx-background-color: #171717;">
+            <top>
+                <AnchorPane prefHeight="772.0" prefWidth="1026.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <TableView fx:id="teamActivityTableView" layoutX="62.0" layoutY="154.0" prefHeight="559.0" prefWidth="431.0">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="C1" />
+                                <TableColumn prefWidth="75.0" text="C2" />
+                            </columns>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </TableView>
+                        <Label layoutX="199.0" layoutY="110.0" text="Team's Activity" textFill="#ffc900">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="commentTableView" layoutX="589.0" layoutY="215.0" prefHeight="495.0" prefWidth="331.0">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="C1" />
+                                <TableColumn prefWidth="75.0" text="C2" />
+                            </columns>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </TableView>
+                        <TextField fx:id="yourcommentTextField" layoutX="589.0" layoutY="161.0" prefHeight="36.0" prefWidth="278.0" promptText="Your Comment" style="-fx-background-radius: 50;" />
+                        <Button layoutX="885.0" layoutY="151.0" mnemonicParsing="false" onAction="#commentButtonClick" prefHeight="46.0" prefWidth="87.0" style="-fx-background-color: #ffc900;" text="Sent">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button layoutX="20.0" layoutY="22.0" mnemonicParsing="false" onAction="#onBackBtnClick" prefHeight="49.0" prefWidth="90.0" style="-fx-background-color: #ffc900;" text="Back">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Label fx:id="activityNameLabel" layoutX="630.0" layoutY="110.0" text="ActivityName Label" textFill="#ffc900">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

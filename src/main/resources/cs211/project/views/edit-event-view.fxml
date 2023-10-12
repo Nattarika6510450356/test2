@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EditEventController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackBtnClick" style="-fx-background-color: #ffc900;" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="799.0" layoutY="429.0" mnemonicParsing="false" onAction="#onCreateNewTeamBtnClick" prefHeight="35.0" prefWidth="176.0" style="-fx-background-color: #ffc900;" text="Create New Team">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="eventImageView" fitHeight="209.0" fitWidth="231.0" layoutX="19.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/events/samplePic.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="eventNameLabel" layoutX="422.0" layoutY="22.0" text="Event Name Label" textFill="#ffc900">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editDetailTextField" layoutX="472.0" layoutY="275.0" promptText="edit detail" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="editEventNameTextField" layoutX="471.0" layoutY="88.0" promptText="edit name" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <DatePicker fx:id="editDateStart" layoutX="494.0" layoutY="534.0" prefHeight="29.0" prefWidth="186.0" promptText="edit date start" />
+      <DatePicker fx:id="editDateFinish" layoutX="496.0" layoutY="661.0" prefHeight="29.0" prefWidth="186.0" promptText="edit date finish" />
+      <TextField fx:id="editMaxSeatTextField" layoutX="472.0" layoutY="395.0" promptText="edit seat" style="-fx-background-radius: 50;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="499.0" layoutY="150.0" mnemonicParsing="false" onAction="#onEditEventPictureBtnClick" style="-fx-background-color: #ffc900; -fx-background-radius: 50;" text="Edit Event Picture">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="270.0" layoutY="92.0" text="Edit Event Name" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="156.0" text="Edit Event Picture" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="403.0" text="Edit Event Max Seat" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="535.0" text="Edit Event Start Date" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="662.0" text="Edit Event Finish Date" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="474.0" layoutY="714.0" mnemonicParsing="false" onAction="#onSaveBtnClick" style="-fx-background-color: #ffc900;" text="Save">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="teamTableView" layoutX="774.0" layoutY="90.0" prefHeight="315.0" prefWidth="216.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Label layoutX="270.0" layoutY="278.0" text="Edit Event Detail" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="220.0" text="Event Detail" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="eventDetailLabel" layoutX="496.0" layoutY="206.0" prefHeight="55.0" prefWidth="240.0" text="Event Detail Label" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="339.0" text="Max Seat" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="maxSeatLabel" layoutX="515.0" layoutY="338.0" text="Max Seat Label" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="468.0" text="Event Start Date" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="eventStartDateLabel" layoutX="493.0" layoutY="466.0" text="Event Start Date Label" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="600.0" text="Event Finish Date" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="eventFinishDateLabel" layoutX="493.0" layoutY="600.0" text="Event Finish Date Label" textFill="#ffc900">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="800.0" layoutY="479.0" mnemonicParsing="false" onAction="#onViewActivityTableBtnClick" prefHeight="35.0" prefWidth="176.0" style="-fx-background-color: #ffc900;" text="View Activity Table">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="826.0" layoutY="529.0" mnemonicParsing="false" onAction="#onManageUserBtnClick" style="-fx-background-color: #ffc900;" text="Manage User">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

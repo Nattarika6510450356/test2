@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.CreateTeamScheduleController">
+   <children>
+      <Button layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#backBtnClick" style="-fx-background-color: #ffc900;" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="479.0" layoutY="458.0" mnemonicParsing="false" onAction="#createBtnClick" style="-fx-background-color: #ffc900;" text="Create">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="355.0" layoutY="91.0" text="Create Team's Activity" textFill="#ffc900">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="265.0" layoutY="202.0" text="Activity Name" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="293.0" text="Activity Detail" textFill="#ffc900">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="activityNameTextField" layoutX="481.0" layoutY="198.0" prefHeight="35.0" prefWidth="274.0" promptText="Activity Name" style="-fx-background-radius: 50;" />
+      <TextField fx:id="activityDetailTextField" layoutX="480.0" layoutY="287.0" prefHeight="35.0" prefWidth="274.0" promptText="Activity Detail" style="-fx-background-radius: 50;" />
+      <Label fx:id="errorLabel" layoutX="501.0" layoutY="329.0" text="errorLabel" textFill="RED" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.EditProfileController">
+   <children>
+      <BorderPane prefHeight="772.0" prefWidth="1025.0" style="-fx-background-color: #171717;">
+         <center>
+            <AnchorPane prefHeight="778.0" prefWidth="1025.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="34.0" layoutY="15.0" mnemonicParsing="false" onAction="#onBackBtnClick" prefHeight="54.0" prefWidth="108.0" style="-fx-background-color: #ffc900;" text="Back">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="errorLabel" layoutX="685.0" layoutY="594.0" text="errorLabel" textFill="RED">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="currPasswordField" layoutX="673.0" layoutY="419.0" prefHeight="42.0" prefWidth="217.0" promptText="Current Password" style="-fx-background-radius: 50;" />
+                  <TextField fx:id="newNameTextField" layoutX="672.0" layoutY="353.0" prefHeight="42.0" prefWidth="217.0" promptText="New Name" style="-fx-background-radius: 50;" />
+                  <ImageView fx:id="profilePicImageView" fitHeight="200.0" fitWidth="200.0" layoutX="97.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/default.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="405.0" layoutY="248.0" text="Username" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usernameLabel" layoutX="673.0" layoutY="243.0" text="usernameLabel" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="408.0" layoutY="302.0" text="Name" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameLabel" layoutX="678.0" layoutY="292.0" text="nameLabel" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="406.0" layoutY="359.0" text="New Name" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="404.0" layoutY="425.0" text="Current Password" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="407.0" layoutY="487.0" text="New Password" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="408.0" layoutY="553.0" text="Confirm New Password" textFill="#ffc900">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="newPasswordField" layoutX="673.0" layoutY="482.0" prefHeight="42.0" prefWidth="217.0" promptText="New Password" style="-fx-background-radius: 50;" />
+                  <PasswordField fx:id="confirmPasswordField" layoutX="676.0" layoutY="545.0" prefHeight="42.0" prefWidth="217.0" promptText="Confirm New Password" style="-fx-background-radius: 50;" />
+                  <Button layoutX="101.0" layoutY="500.0" mnemonicParsing="false" onAction="#onEditPicBtnClick" prefHeight="51.0" prefWidth="189.0" style="-fx-background-color: #ffc900;" text="Edit Profile Pic">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="463.0" layoutY="669.0" mnemonicParsing="false" onAction="#onSaveEditProfileBtnClick" prefHeight="50.0" prefWidth="95.0" style="-fx-background-color: #ffc900;" text="Save">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
